@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-
+ 
 <html>
-
+ 
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
-	 <form>
-        <label for="name">Name</label> <br>
-        <input  action="#" type="text" id="name" mathod="post" name="name" placeholder="name"><br>
-        <label for="#email">Email</label><br>
-        <input action="#" type="Email" id="#email" method="post" name="#email" placeholder="Email"><br>
-        <label for="#gender_m">Gender</label><br>
-        <input type="radio" value="Male" name="#gender_m" id="#gender_m" method="post">Male
-        <input type="radio" value="Female" name="#gender_m" id="#gender_m" method="post">Female<br>
-        <label for="#cars">Car Brands</label><br>
-        <input type="select" name="#cars" method="post" id="#cars" placeholder="--Please choose an option--"><br>
-        <label for="#age">Age</label><br>
-        <input action="#" type="number" method="post" id="#age" name="#age" placeholder="Age"><br>
-        <label for="age">DOB</label><br>
-        <input action="#" type="Date" method="post" id="#age" name="#age" ><br>
-        <label for="#tel">Phone Number</label><br>
-        <input action="#" type="Tel" method="post" id="#tel" name="#tel" placeholder="xxx-xxx-xxxx"><br>
-        
-        <label for="Password#">Password</label><br>
-        <input action="#" type="Password" method="post" id="#Password" name="#Password" placeholder="Password"><br>
-        
-        <label for="#tos">I agree to the TOS</label><br>
-        <input action="#" type="Checkbox" method="post" id="#tos" name="#tos"><br>
-        
-        <label for="sumbit"></label><br>
-        <input action="#" type="submit" method="post" id="sumbit" name="sumbit" placeholder="sumbit"><br>
-
-
-    </form>
 	<!-- the entire body must be written by student -->
+ 
+	<form method="post">
+            <label for="name">Name :</label><br>
+            <input type="text" id="name" placeholder="Name" name="name" required>
+            <br>
+ 
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" placeholder="Email" name="email" required><br>
+ 
+ 
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender_m" name="gender" required>
+            <label for="gender">Male</label>
+            <input type="radio" id="gender_f" name="gender" required>
+            <label for="gender">Female</label><br>
+ 
+ 
+            <label for="cars">Car Brands :</label>
+ 
+            <select name="cars" id="cars" required>
+            <option value="" disabled selected hidden>--Please choose an option--</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </select><br>
+ 
+            <label for="age">Age :</label><br>
+            <input type="number" id="age" placeholder="Age" name="age" required><br>
+ 
+            <label for="dob">DOB :</label><br>
+            <input type="date" id="dob" placeholder="DOB" name="dob" required><br>
+ 
+            <label for="tel">Phone-Number :</label><br>
+            <input type="tel" id="tel" placeholder="xxx-xxx-xxxx" name="tel"><br>
+ 
+            <label for="password">Password :</label><br>
+            <input type="password" id="password" placeholder="Password" name="password" required><br>
+ 
+            <input type="checkbox" id="tos" name="tos" required>
+            <label for="tos">I agree to the TOS</label><br>
+ 
+            <button type="submit">Submit</button>
+          </form>
     <script type="text/javascript" src="./script.js">
 </script>
-
+ 
 </body>
-
+ 
 </html>
